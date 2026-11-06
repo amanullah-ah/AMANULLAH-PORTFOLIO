@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#08080c">
+<title>Gallery - Captured Moments | Aman Ullah</title>
+<meta name="description" content="Captured Moments: the photo gallery of Aman Ullah. Browse every frame in masonry, grid or mosaic layout and open any photo full screen.">
+<link rel="canonical" href="https://mr-amanullah736.vercel.app/gallery.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Aman Ullah">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMAN ULLAH">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Gallery - Captured Moments | Aman Ullah">
+<meta property="og:description" content="Captured Moments: the photo gallery of Aman Ullah. Browse every frame in masonry, grid or mosaic layout and open any photo full screen.">
+<meta property="og:url" content="https://mr-amanullah736.vercel.app/gallery.html">
+<meta property="og:image" content="https://ik.imagekit.io/amanphoto/Personal/20260526_224103.jpg?updatedAt=1780210590255">
+<meta property="og:image:alt" content="Aman Ullah, creative developer from Pakistan">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gallery - Captured Moments | Aman Ullah">
+<meta name="twitter:description" content="Captured Moments: the photo gallery of Aman Ullah. Browse every frame in masonry, grid or mosaic layout and open any photo full screen.">
+<meta name="twitter:image" content="https://ik.imagekit.io/amanphoto/Personal/20260526_224103.jpg?updatedAt=1780210590255">
+<link rel="icon" href="https://ik.imagekit.io/amanphoto/20260620_164003.png?updatedAt=1781955650166">
+<link rel="apple-touch-icon" href="https://ik.imagekit.io/amanphoto/20260620_164003.png?updatedAt=1781955650166">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://mr-amanullah736.vercel.app/#aman","name":"Aman Ullah","url":"https://mr-amanullah736.vercel.app/","image":"https://ik.imagekit.io/amanphoto/Personal/20260526_224103.jpg?updatedAt=1780210590255","jobTitle":"Creative Developer","description":"Self-taught developer and content creator from Pakistan.","address":{"@type":"PostalAddress","addressCountry":"PK"},"knowsAbout":["Web development","Telegram bots","Android apps","SEO tools","UI design"],"sameAs":["https://www.youtube.com/@amantechzone5911","https://www.tiktok.com/@amanullah.736","https://t.me/amaantechzone","https://whatsapp.com/channel/0029Vb8Hsxs72WU1Dx57eu1q"]},{"@type":"ImageGallery","@id":"https://mr-amanullah736.vercel.app/gallery.html","url":"https://mr-amanullah736.vercel.app/gallery.html","name":"Gallery - Captured Moments | Aman Ullah","description":"Captured Moments: the photo gallery of Aman Ullah. Browse every frame in masonry, grid or mosaic layout and open any photo full screen.","isPartOf":{"@id":"https://mr-amanullah736.vercel.app/#site"},"about":{"@id":"https://mr-amanullah736.vercel.app/#aman"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mr-amanullah736.vercel.app/"},{"@type":"ListItem","position":2,"name":"Gallery - Captured Moments","item":"https://mr-amanullah736.vercel.app/gallery.html"}]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://ik.imagekit.io">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="css/amanullah-gallery.css">
+</head>
+<body>
+<div class="wrap">
+ <div class="top"><a href="index.html#home"><em class="ar" style="font-style:normal"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg></em>Back to home</a><span><i></i>Aman Dev Portfolio</span></div>
+
+ <div class="hero gh">
+  <div class="badge"><b>&#10022;</b> Photo Gallery</div>
+  <h1><span class="t1">Captured</span><em>Moments</em></h1>
+  <div class="gln" aria-hidden="true"><i></i><b>&#10022;</b><i></i></div>
+  <p class="sub">Same guy, different shades. Every frame tells a small story. Pick a layout, then tap any photo to view it full screen.</p>
+  <div class="stats">
+   <div><b id="gcnt">0</b><small>Photos</small></div>
+   <div><b>3</b><small>Layouts</small></div>
+   <div><b>PK</b><small>Bhakkar</small></div>
+  </div>
+ </div>
+
+ <div class="tools">
+  <div class="chips lay" id="gtb" role="group" aria-label="Gallery layout">
+   <button type="button" class="on" data-m="" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="11" rx="2"/><rect x="13" y="3" width="8" height="7" rx="2"/><rect x="3" y="16" width="8" height="5" rx="2"/><rect x="13" y="12" width="8" height="9" rx="2"/></svg>Masonry</button>
+   <button type="button" data-m="grid" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>Grid</button>
+   <button type="button" data-m="mosaic" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="9" rx="2"/><rect x="3" y="14" width="8" height="7" rx="2"/><rect x="13" y="14" width="8" height="7" rx="2"/></svg>Mosaic</button>
+  </div>
+ </div>
+ <div class="count" id="count"></div>
+ <main class="gc" id="gc"></main>
+
+ <section class="about loc" id="loc" aria-label="Location - Bhakkar and Notak">
+  <span class="kick">&#10022; Location</span>
+  <h2>My <em>Roots</em></h2>
+  <p>City: <b>Bhakkar</b> &middot; Village: <b>Notak</b><br>Punjab, Pakistan</p>
+
+  <div class="lwrap">
+   <div class="lmap" id="lmap" role="region" aria-label="Map showing Bhakkar city and Notak village in Punjab, Pakistan">
+    <div class="m3" id="m3"></div>
+    <iframe class="gm" id="gm" title="Google Map - Bhakkar and Notak" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    <div class="mfb" id="mfb"><b>Map load nahi ho saka</b><span>Internet check karein ya neeche Google Maps button use karein.</span></div>
+    <div class="earth" id="earth" role="img" aria-label="Rotating Earth"><canvas class="eglobe" id="eglobe" role="img" aria-label="Rotating Earth with Bhakkar marked. Drag to spin."></canvas><p class="enf"><b>Map load nahi ho saka</b>Internet check karein ya neeche Google Maps button use karein.</p><p class="eok"><b>Bhakkar</b>Punjab, Pakistan</p></div>
+   </div>
+   <div class="lsw" id="lsw" role="group" aria-label="Map style">
+    <button type="button" class="on" data-s="3d" aria-pressed="true">3D</button>
+    <button type="button" data-s="google" aria-pressed="false">Google</button>
+    <button type="button" data-s="street" aria-pressed="false">Map</button>
+    <button type="button" data-s="dark" aria-pressed="false">Earth &#127757;</button>
+    <button type="button" data-s="sat" aria-pressed="false">Satellite</button>
+   </div>
+   <button type="button" class="rst" id="mrst" aria-label="Show both places"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg></button>
+  </div>
+
+  <div class="mt">
+   <button type="button" class="tile tc" id="tcity" data-f="city"><small>City</small><b>Bhakkar</b><em>31.63&deg; N &middot; 71.07&deg; E</em></button>
+   <button type="button" class="tile tv" id="tvil" data-f="vil"><small>Village</small><b>Notak</b><em>31.48&deg; N &middot; 71.03&deg; E</em></button>
+  </div>
+  <div class="mgo">
+   <a class="go sm" href="https://www.google.com/maps/search/?api=1&amp;query=Bhakkar%2C+Punjab%2C+Pakistan" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>Bhakkar</a>
+   <a class="go sm" href="https://www.google.com/maps/search/?api=1&amp;query=Notak%2C+Bhakkar%2C+Punjab%2C+Pakistan" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>Notak</a>
+  </div>
+ </section>
+
+ <footer class="foot"><strong>Aman Ullah</strong><span>&copy; <span id="yr" style="display:inline;margin:0"></span> All rights reserved. Built for speed on mobile.</span></footer>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+ <div class="lbbg" id="lbbg"></div>
+ <div class="lbtop">
+  <span class="lbc" id="lbc"></span>
+  <div class="lbact">
+   <button type="button" class="lbb" id="lbp" aria-label="Start slideshow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></button>
+   <a class="lbb" id="lbo" target="_blank" rel="noopener" aria-label="Open original photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+   <button type="button" class="lbb" id="lbx" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+ </div>
+ <div class="lbst" id="lbst"><img class="lbi" id="lbi" alt="" draggable="false"></div>
+ <button type="button" class="lbb lbpv" id="lbpv" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+ <button type="button" class="lbb lbnx" id="lbnx" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+ <div class="lbth" id="lbth"></div>
+</div>
+
+<nav class="nv" id="nvd" aria-label="Quick navigation">
+<div class="nv-g">
+  <a href="index.html#home" data-page="index.html" aria-label="Home"><span class="nv-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span><b>Home</b></a>
+  <a href="skills.html" data-page="skills.html" aria-label="Skills"><span class="nv-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span><b>Skills</b></a>
+  <a href="gallery.html" data-page="gallery.html" aria-label="Gallery"><span class="nv-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></span><b>Gallery</b></a>
+</div>
+  <a href="projects.html" data-page="projects.html" class="nv-mid" aria-label="Projects"><span class="nv-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/><path d="M13.5 6l-3 12"/></svg></span></a>
+<div class="nv-g">
+  <a href="index.html#faq" data-page="faq" aria-label="FAQ"><span class="nv-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg></span><b>FAQ</b></a>
+  <a href="about.html" data-page="about.html" aria-label="About"><span class="nv-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span><b>About</b></a>
+  <a href="contact.html" data-page="contact.html" aria-label="Contact"><span class="nv-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span><b>Contact</b></a>
+</div>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>window.PK_NOLEAF=typeof L==='undefined';</script>
+<script>/* Notak pin par jo photo lagti hai: apni photo ka link yahan badlo */window.PK_PHOTO='https://ik.imagekit.io/amanphoto/20260620_164003.png?updatedAt=1781955650166';</script>
+<script src="js/amanullah-punjab3d.js"></script>
+<script src="js/amanullah-gallery.js"></script>
+<script src="js/amanullah-earth.js"></script>
+<script src="js/amanullah-cms.js"></script>
+</body>
+</html>
