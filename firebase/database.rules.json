@@ -1,0 +1,23 @@
+{
+  "rules": {
+    "settings": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === 'myCaGezIoNahcPI6YHAtl5FvZfv1'"
+    },
+    "sections": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === 'myCaGezIoNahcPI6YHAtl5FvZfv1'"
+    },
+    "items": {
+      ".read": true,
+      ".write": "auth != null && auth.uid === 'myCaGezIoNahcPI6YHAtl5FvZfv1'"
+    },
+    "messages": {
+      ".read": "auth != null && auth.uid === 'myCaGezIoNahcPI6YHAtl5FvZfv1'",
+      "$id": {
+        ".write": "(auth != null && auth.uid === 'myCaGezIoNahcPI6YHAtl5FvZfv1') || (!data.exists() && newData.exists())",
+        ".validate": "newData.hasChildren(['name','email','body']) && newData.child('name').isString() && newData.child('email').isString() && newData.child('body').isString() && newData.child('name').val().length < 150 && newData.child('email').val().length < 200 && newData.child('body').val().length < 3000"
+      }
+    }
+  }
+}
